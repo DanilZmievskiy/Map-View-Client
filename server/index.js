@@ -220,7 +220,7 @@ const route1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   default: home,
   meta
 }, Symbol.toStringTag, { value: "Module" }));
-const serverManifest = { "entry": { "module": "/Map-View-Client/assets/entry.client-C4vAeVvd.js", "imports": ["/Map-View-Client/assets/chunk-EPOLDU6W-CP3WDhNt.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": true, "module": "/Map-View-Client/assets/root-DtfFuAi8.js", "imports": ["/Map-View-Client/assets/chunk-EPOLDU6W-CP3WDhNt.js"], "css": ["/Map-View-Client/assets/root-CrHW9lRf.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/Map-View-Client/assets/home-DEOPjvmN.js", "imports": ["/Map-View-Client/assets/chunk-EPOLDU6W-CP3WDhNt.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/Map-View-Client/assets/manifest-ca3073e0.js", "version": "ca3073e0", "sri": void 0 };
+const serverManifest = { "entry": { "module": "/Map-View-Clientassets/entry.client-C4vAeVvd.js", "imports": ["/Map-View-Clientassets/chunk-EPOLDU6W-CP3WDhNt.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": true, "module": "/Map-View-Clientassets/root-DtfFuAi8.js", "imports": ["/Map-View-Clientassets/chunk-EPOLDU6W-CP3WDhNt.js"], "css": ["/Map-View-Clientassets/root-CrHW9lRf.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/Map-View-Clientassets/home-DEOPjvmN.js", "imports": ["/Map-View-Clientassets/chunk-EPOLDU6W-CP3WDhNt.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/Map-View-Clientassets/manifest-59832a3b.js", "version": "59832a3b", "sri": void 0 };
 const assetsBuildDirectory = "build/client";
 const basename = "/";
 const future = { "unstable_optimizeDeps": false, "unstable_subResourceIntegrity": false, "unstable_trailingSlashAwareDataRequests": false, "v8_middleware": false, "v8_splitRouteModules": false, "v8_viteEnvironmentApi": false };
@@ -228,7 +228,7 @@ const ssr = true;
 const isSpaMode = false;
 const prerender = [];
 const routeDiscovery = { "mode": "lazy", "manifestPath": "/__manifest" };
-const publicPath = "/Map-View-Client/";
+const publicPath = "/Map-View-Client";
 const entry = { module: entryServer };
 const routes = {
   "root": {
