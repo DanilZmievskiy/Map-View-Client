@@ -117,8 +117,8 @@ const route0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   default: root,
   links
 }, Symbol.toStringTag, { value: "Module" }));
-const logoDark = "/assets/logo-dark-pX2395Y0.svg";
-const logoLight = "/assets/logo-light-CVbx2LBR.svg";
+const logoDark = "/Map-View-Client/assets/logo-dark-pX2395Y0.svg";
+const logoLight = "/Map-View-Client/assets/logo-light-CVbx2LBR.svg";
 function Welcome() {
   return /* @__PURE__ */ jsx("main", { className: "flex items-center justify-center pt-16 pb-4", children: /* @__PURE__ */ jsxs("div", { className: "flex-1 flex flex-col items-center gap-16 min-h-0", children: [
     /* @__PURE__ */ jsx("header", { className: "flex flex-col items-center gap-9", children: /* @__PURE__ */ jsxs("div", { className: "w-[500px] max-w-[100vw] p-4", children: [
@@ -220,7 +220,7 @@ const route1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   default: home,
   meta
 }, Symbol.toStringTag, { value: "Module" }));
-const serverManifest = { "entry": { "module": "/assets/entry.client-C4vAeVvd.js", "imports": ["/assets/chunk-EPOLDU6W-CP3WDhNt.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": true, "module": "/assets/root-DtfFuAi8.js", "imports": ["/assets/chunk-EPOLDU6W-CP3WDhNt.js"], "css": ["/assets/root-CrHW9lRf.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/assets/home-DpDhra-2.js", "imports": ["/assets/chunk-EPOLDU6W-CP3WDhNt.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/assets/manifest-b86f108c.js", "version": "b86f108c", "sri": void 0 };
+const serverManifest = { "entry": { "module": "/Map-View-Client/assets/entry.client-C4vAeVvd.js", "imports": ["/Map-View-Client/assets/chunk-EPOLDU6W-CP3WDhNt.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": true, "module": "/Map-View-Client/assets/root-DtfFuAi8.js", "imports": ["/Map-View-Client/assets/chunk-EPOLDU6W-CP3WDhNt.js"], "css": ["/Map-View-Client/assets/root-CrHW9lRf.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/Map-View-Client/assets/home-DEOPjvmN.js", "imports": ["/Map-View-Client/assets/chunk-EPOLDU6W-CP3WDhNt.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/Map-View-Client/assets/manifest-ca3073e0.js", "version": "ca3073e0", "sri": void 0 };
 const assetsBuildDirectory = "build/client";
 const basename = "/";
 const future = { "unstable_optimizeDeps": false, "unstable_subResourceIntegrity": false, "unstable_trailingSlashAwareDataRequests": false, "v8_middleware": false, "v8_splitRouteModules": false, "v8_viteEnvironmentApi": false };
@@ -228,7 +228,7 @@ const ssr = true;
 const isSpaMode = false;
 const prerender = [];
 const routeDiscovery = { "mode": "lazy", "manifestPath": "/__manifest" };
-const publicPath = "/";
+const publicPath = "/Map-View-Client/";
 const entry = { module: entryServer };
 const routes = {
   "root": {
