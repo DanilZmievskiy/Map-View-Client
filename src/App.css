@@ -1,42 +1,149 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.app-shell {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(320px, 440px) 1fr;
+  background:
+    radial-gradient(circle at top left, rgba(255, 196, 61, 0.22), transparent 24%),
+    linear-gradient(135deg, #f3efe6 0%, #dbe8f0 100%);
+  overflow: hidden;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 0;
+  padding: 2rem 1.5rem 1.5rem 2rem;
+  color: #13232f;
+  overflow: hidden;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #8b5e34;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 3vw, 4.6rem);
+  line-height: 1.2;
+  max-width: 15ch;
+  margin-bottom: 1.3rem;
+}
+
+.description {
+  margin: 0;
+  max-width: 34ch;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.notice {
+  width: fit-content;
+  max-width: 34ch;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  background: rgba(139, 94, 52, 0.12);
+  border: 1px solid rgba(139, 94, 52, 0.2);
+  color: #6a4220;
+}
+
+.places-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  margin-top: 0.5rem;
+  height: 20vh;
+  flex: 1;
+  /* scroll-behavior: smooth; */
+}
+
+.places-list::-webkit-scrollbar {
+  display: none;
+}
+
+.places-list::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(19, 35, 47, 0.22);
+}
+
+.place-card {
+  padding: 1.1rem 1rem 1.2rem;
+  border-radius: 18px;
+  background: rgba(255, 252, 247, 0.72);
+  border: 1px solid rgba(19, 35, 47, 0.08);
+  box-shadow: 0 18px 45px rgba(19, 35, 47, 0.08);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.place-card.is-active {
+  transform: translateX(6px);
+  border-color: rgba(139, 94, 52, 0.35);
+  background: rgba(255, 247, 233, 0.96);
+  box-shadow: 0 24px 60px rgba(19, 35, 47, 0.14);
+}
+
+.place-label {
+  margin: 0 0 0.65rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.place-copy {
+  margin: 0;
+  color: rgba(19, 35, 47, 0.82);
+  line-height: 1.65;
+}
+
+.map-panel {
+  padding: 1.5rem;
+  min-height: 0;
+}
+
+.map-container {
+  height: calc(100vh - 3rem);
+  min-height: 420px;
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(19, 35, 47, 0.18);
+}
+
+@media (max-width: 900px) {
+  .app-shell {
+    height: auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    overflow: visible;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero {
+    min-height: auto;
+    padding: 2rem 1.25rem 1rem;
+    overflow: visible;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .places-list {
+    max-height: 42vh;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .map-panel {
+    padding: 1.25rem;
+    padding-top: 0;
+  }
 
-.read-the-docs {
-  color: #888;
+  .map-container {
+    height: 58vh;
+  }
 }
